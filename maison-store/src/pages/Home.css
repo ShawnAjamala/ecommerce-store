@@ -1,0 +1,26 @@
+.hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #3d2b1f 100%);
+  color: #fff; padding: 4rem 3rem; border-radius: 20px;
+  margin-bottom: 3rem; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -60px; right: -60px;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: rgba(200,98,42,0.15);
+}
+.hero h1 { font-family: var(--ff-display); font-size: 3rem; font-weight: 600; line-height: 1.1; margin-bottom: 1rem; }
+.hero p { opacity: 0.75; font-size: 1.05rem; margin-bottom: 1.5rem; max-width: 420px; }
+.hero-btn {
+  background: var(--accent); color: #fff;
+  padding: 12px 28px; border-radius: 50px;
+  font-size: 0.95rem; font-weight: 500; cursor: pointer; border: none;
+  transition: opacity 0.2s;
+}
+.hero-btn:hover { opacity: 0.88; }
+.category-pills { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.category-pill {
+  padding: 8px 20px; border-radius: 50px;
+  border: 1px solid var(--border); background: var(--surface);
+  font-size: 0.85rem; cursor: pointer; transition: all 0.2s;
+}
+.category-pill:hover { background: var(--accent); color: #fff; border-color: var(--accent); }

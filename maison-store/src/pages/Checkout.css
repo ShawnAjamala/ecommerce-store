@@ -1,0 +1,11 @@
+.checkout-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 700px) { .checkout-layout { grid-template-columns: 1fr; } }
+.checkout-section-heading { font-family: var(--ff-display); font-size: 1.1rem; margin-bottom: 1rem; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.order-summary-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; }
+.order-summary-item { display: flex; justify-content: space-between; font-size: 0.88rem; padding: 6px 0; border-bottom: 1px solid var(--border); }
+.order-summary-total { display: flex; justify-content: space-between; font-size: 1.1rem; font-weight: 600; padding: 1rem 0; }
+.order-success { text-align: center; padding: 4rem; }
+.success-icon { font-size: 3rem; margin-bottom: 1rem; }
+.order-success h2 { font-family: var(--ff-display); font-size: 1.6rem; margin-bottom: 0.5rem; }
+.order-success p { color: var(--muted); margin-bottom: 1.5rem; }

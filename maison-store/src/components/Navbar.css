@@ -1,0 +1,31 @@
+.navbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px; position: sticky; top: 0; z-index: 100;
+}
+.nav-logo {
+  font-family: var(--ff-display); font-size: 1.5rem;
+  font-weight: 600; color: var(--accent);
+}
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-link {
+  font-size: 0.9rem; font-weight: 500; color: var(--muted);
+  transition: color 0.2s; text-decoration: none;
+}
+.nav-link:hover, .nav-link.active { color: var(--text); }
+.nav-btn-text { background: none; border: none; cursor: pointer; padding: 0; }
+.nav-cart {
+  position: relative; background: var(--accent);
+  color: #fff; padding: 8px 18px; border-radius: 50px;
+  font-size: 0.85rem; font-weight: 500; text-decoration: none;
+  transition: opacity 0.2s;
+}
+.nav-cart:hover { opacity: 0.88; }
+.cart-badge {
+  position: absolute; top: -6px; right: -6px;
+  background: var(--text); color: #fff; border-radius: 50%;
+  width: 18px; height: 18px; font-size: 10px;
+  display: flex; align-items: center; justify-content: center; font-weight: 700;
+}
